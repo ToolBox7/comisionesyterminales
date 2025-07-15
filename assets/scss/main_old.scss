@@ -1,0 +1,80 @@
+/*!
+ * Evita que Jekyll procese este comentario
+ * Mantiene el front matter para que Jekyll no lo ignore
+ */
+
+@import "variables";
+
+// Estilos globales
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: $text-color;
+  background: $background;
+}
+
+// Resto de tus estilos...
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Calculadora */
+.calculator-container {
+  padding: 40px 0;
+
+  .calculator-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+/* Formulario */
+.calculator-form {
+  .form-group {
+    margin-bottom: 20px;
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+  }
+
+  .btn-calculate {
+    background: $primary-color;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+
+    &:hover {
+      background: darken($primary-color, 10%);
+    }
+  }
+
+  .result-container {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    border-left: 4px solid $primary-color;
+  }
+}

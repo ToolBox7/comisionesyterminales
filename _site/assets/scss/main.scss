@@ -1,0 +1,57 @@
+// Variables
+$primary-color: #2c3e50;
+$secondary-color: #3498db;
+$text-color: #333;
+$background: #f9f9f9;
+
+// Estilos globales
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: $text-color;
+  background: $background;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+// Header
+.site-header {
+  background: $primary-color;
+  color: white;
+  padding: 20px 0;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Botones
+.btn-primary {
+  display: inline-block;
+  background: $secondary-color;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s;
+
+  &:hover {
+    background: darken($secondary-color, 10%);
+  }
+}

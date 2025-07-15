@@ -1,0 +1,18 @@
+<form id="commission-form" class="calculator-form">
+  <div class="form-group">
+    <label for="amount">Monto ($MXN):</label>
+    <input type="number" id="amount" step="0.01" required>
+  </div>
+
+  <div class="form-group">
+    <label for="terminal-type">Tipo de Terminal:</label>
+    <select id="terminal-type" required>
+      <option value="basic">Básica (3.5%)</option>
+      <option value="premium">Premium (2.5%)</option>
+    </select>
+  </div>
+
+  <button type="submit" class="btn-calculate">Calcular Comisión</button>
+
+  <div id="result" class="result-container"></div>
+</form>
